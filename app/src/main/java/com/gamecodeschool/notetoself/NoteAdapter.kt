@@ -37,7 +37,7 @@ class NoteAdapter(
 
         // Show the first 15 characters of the actual note
         holder.description.text =
-            note.description!!.substring(0, 15)
+            note.description!! //Removed for 15 char CRASH .substring(0, 15)
 
         // What is the status of the note?
         when {
